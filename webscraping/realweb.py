@@ -15,12 +15,7 @@ for jobs in job:
         skills = jobs.find('span', class_ = 'srp-skills').text.replace(' ', '')
         print(skills)
         print(company_name)
-        
-
-        print(f'''
-        Company Name : {company_name}
-        Required Skills : {skills}
-        Date Published : {published_date}
-        ''')
+        print(f"Company Name : {company_name.strip()}")
+        print(f"Required Skills : {skills.strip()}")
         print('')
 
