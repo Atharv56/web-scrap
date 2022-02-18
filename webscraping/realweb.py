@@ -16,8 +16,11 @@ for jobs in job:
         company_name  = jobs.find('h3', class_ = "joblist-comp-name").text.replace(' ', '')
         skills = jobs.find('span', class_ = 'srp-skills').text.replace(' ', '')
         more_info = jobs.header.h2.a['href']
-        print(f"Company Name : {company_name.strip()}")
-        print(f"Required Skills : {skills.strip()}")
-        print(f"More Info : {more_info}")
-        print('')
+
+        if unfamiliar_skill not in skills:
+
+            print(f"Company Name : {company_name.strip()}")
+            print(f"Required Skills : {skills.strip()}")
+            print(f"More Info : {more_info}")
+            print('')
 
