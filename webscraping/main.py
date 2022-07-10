@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-with open('/Users/atharvsalian/Desktop/Github/web-scrap/web-scrap/webscraping/home.html', 'r') as html_file:
+with open('D:\Code\Github codes\web-scrap\webscraping\home.html', 'r') as html_file:
 
     content = html_file.read()
 
